@@ -22,12 +22,13 @@ public class Squad {
     return mSquadName;
   }
 
-  public void addHero(Hero newHero){
+  public String addHero(Hero newHero){
     if (mSize <= 2){
       mSquadMembers.add(newHero);
       mSize++;
+      return "Successfully added hero";
     } else {
-      System.out.println("Squad is at maximum size");
+      return "Squad is at maximum size";
     }
   }
 
